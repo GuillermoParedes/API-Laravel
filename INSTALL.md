@@ -9,7 +9,9 @@ El proyecto utiliza las tecnologias de:
 * Postgres
 
 
-## Configuracion de .ENV
+## Configuración de .ENV
+
+Ingresar las variables de acuerdo a su entorno de desarrollo, en este caso se esta utilizando como Base de Datos Postgres.
 
 ```console
 
