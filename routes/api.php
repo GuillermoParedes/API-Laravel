@@ -20,10 +20,12 @@ use Illuminate\Http\Request;
 
 $api = app('Dingo\Api\Routing\Router');
 
-$api->version('v1', function ($api) {
+$api->version('v1',  ['namespace' => 'App\Http\Controllers\API', 'protected' => true], function ($api) {
 
     $api->get('docs', function () {
         return 'Documentacion de la API Rest';
     });
-
+    $api->post('register', 'AuthController@register');
+    $api->post('login', 'AuthController@login');
+    $api->post('recover', 'AuthController@recover');
 });
