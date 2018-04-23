@@ -18,7 +18,7 @@ class UserTransformer extends TransformerAbstract
     public function transform(User $model)
     {
         return [
-            'id' => $model->uuid,
+            'id' => $model->id,
             'name' => $model->name,
             'email' => $model->email,
             'created_at' => $model->created_at->toIso8601String(),

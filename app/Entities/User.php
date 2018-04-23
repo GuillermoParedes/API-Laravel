@@ -26,5 +26,5 @@ class User extends ModelApi
      */
     protected $hidden = [
         'password', 'remember_token',
-    ];
+];
 }
