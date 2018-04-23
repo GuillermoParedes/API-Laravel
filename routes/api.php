@@ -28,4 +28,7 @@ $api->version('v1',  ['namespace' => 'App\Http\Controllers\API', 'protected' => 
     $api->post('register', 'AuthController@register');
     $api->post('login', 'AuthController@login');
     $api->post('recover', 'AuthController@recover');
+
+    $api->resource('users', 'UserController');
+
 });

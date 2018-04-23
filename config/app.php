@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        MetricLoop\TransformerMaker\TransformerMakerServiceProvider::class,
 
         /*
          * Application Service Providers...
