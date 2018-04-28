@@ -12,5 +12,4 @@ class ModelApi extends Model
         $model->uuid = (string) Uuid::generate(4);
     });
   }
-    
 }
